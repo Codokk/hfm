@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
-  "applicationId": "js.neutralino.sample",
-  "version": "1.0.0",
+  "applicationId": "com.cmkrist.hfm",
+  "version": "3.0.0",
   "defaultMode": "window",
   "port": 0,
-  "documentRoot": "/resources/",
+  "documentRoot": "/frontend/dist",
   "url": "/",
-  "enableServer": true,
+  "enableServer": false,
   "enableNativeAPI": true,
   "tokenSecurity": "one-time",
   "logging": {
@@ -19,20 +19,11 @@
     "debug.log"
   ],
   "globalVariables": {
-    "TEST1": "Hello",
-    "TEST2": [
-      2,
-      4,
-      5
-    ],
-    "TEST3": {
-      "value1": 10,
-      "value2": {}
-    }
+    
   },
   "modes": {
     "window": {
-      "title": "hfm2",
+      "title": "Hosts File Manager",
       "width": 800,
       "height": 500,
       "minWidth": 400,
