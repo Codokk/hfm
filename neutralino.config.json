@@ -4,9 +4,9 @@
   "version": "3.0.0",
   "defaultMode": "window",
   "port": 0,
-  "documentRoot": "/frontend/dist",
+  "documentRoot": "/frontend/dist/",
   "url": "/",
-  "enableServer": false,
+  "enableServer": true,
   "enableNativeAPI": true,
   "tokenSecurity": "one-time",
   "logging": {
