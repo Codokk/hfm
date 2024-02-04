@@ -5,16 +5,19 @@ export default {
     return { count }
   },
   template: `
-  <div class="surface-50 flex flex-row align-items-center justify-content-between">
+  <div class="surface-50 flex flex-row align-items-center justify-content-between m-2">
     <div class="inline-block w-2 h-1">
-      <button class="grey-800 flex flex-row align-items-center inline-block">
-        <img src="https://placehold.co/400" class="mr-1 w-3">
+      <button class="surface-100 flex flex-row align-items-center inline-block border-none border-round justify-content-center hover:surface-200">
+        <i class="pi pi-plus mr-3 w-1"></i>  
         <p> New entry </p>
       </button>
     </div>
 
-    <div>
-      <p>these are others</p>
+    <div class="flex flex-row">
+      <i class="pi pi-file mr-3 p-2 hover:surface-200 text-xl border-round-md"></i>
+      <i class="pi pi-filter mr-3 p-2 hover:surface-200 text-xl border-round-md"></i>
+      <i class="pi pi-external-link mr-3 p-2 hover:surface-200 text-xl border-round-md"></i>
+      <i class="pi pi-cog mr-3 p-2 hover:surface-200 text-xl border-round-md"></i>
     </div>
   </div>`
 }
