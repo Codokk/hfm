@@ -3,6 +3,19 @@
 // Feel free to use any frontend framework you like :)
 // See more details: https://neutralino.js.org/docs/how-to/use-a-frontend-library
 
+// Components
+import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+const app = createApp({
+    setup() {
+        const message = ref('Hello, Neutralinojs!')
+        return {
+        message
+        }
+    }
+}).mount('#app')
+
+
 function showInfo() {
     document.getElementById('info').innerHTML = `
         ${NL_APPID} is running on port ${NL_PORT}  inside ${NL_OS}
