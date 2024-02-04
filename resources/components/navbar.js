@@ -5,7 +5,7 @@ export default {
     return { count }
   },
   template: `
-  <div class="surface-50 flex flex-row align-items-center justify-content-between m-2">
+  <div class="surface-50 flex flex-row align-items-center justify-content-between mt-3 mb-3">
     <div class="inline-block w-2 h-1">
       <button class="surface-100 flex flex-row align-items-center inline-block border-none border-round justify-content-center hover:surface-200">
         <i class="pi pi-plus mr-3 w-1"></i>  

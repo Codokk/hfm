@@ -7,7 +7,7 @@ export default {
         actve: true
     };
     const data = ref([])
-    for(let i = 0; i < 0; i++) {
+    for(let i = 0; i < 10; i++) {
         data.value.push(entry);
     }
     return { data }
