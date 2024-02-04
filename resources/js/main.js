@@ -5,15 +5,21 @@
 
 // Components
 import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+import navbar from '../components/navbar.js';
+
 
 const app = createApp({
     setup() {
         const message = ref('Hello, Neutralinojs!')
         return {
-        message
+            message
         }
-    }
+    },
+    components: {
+        navbar
+    },
 }).mount('#app')
+
 
 
 function showInfo() {
