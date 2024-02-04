@@ -1,26 +1,20 @@
-// This is just a sample app. You can structure your Neutralinojs app code as you wish.
-// This example app is written with vanilla JavaScript and HTML.
-// Feel free to use any frontend framework you like :)
-// See more details: https://neutralino.js.org/docs/how-to/use-a-frontend-library
+import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
 // Components
-import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-import navbar from '../components/navbar.js';
+import navbar from "../components/navbar.js";
+import hostsManager from "../components/hostsManager.js";
 
-
-const app = createApp({
-    setup() {
-        const message = ref('Hello, Neutralinojs!')
-        return {
-            message
-        }
-    },
+// App
+createApp({
     components: {
-        navbar
+        navbar,
+        hostsManager
     },
-}).mount('#app')
-
-
+    template: `
+        <navbar></navbar>
+        <hosts-manager></hosts-manager>
+    `
+}).mount('#app');
 
 function showInfo() {
     document.getElementById('info').innerHTML = `
