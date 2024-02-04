@@ -4,7 +4,7 @@
   "version": "3.0.0",
   "defaultMode": "window",
   "port": 0,
-  "documentRoot": "/frontend/dist/",
+  "documentRoot": "/resources",
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
